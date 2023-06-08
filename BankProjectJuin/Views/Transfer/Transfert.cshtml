@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Make a Transfer";
+}
+
+<h2>Make a Transfer</h2>
+
+<form asp-controller="Transfer" asp-action="Transfer" method="post">
+    <div class="form-group">
+        <label for="toAccount">To Account:</label>
+        <input type="text" id="toAccount" name="toAccount" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Transfer</button>
+</form>
+

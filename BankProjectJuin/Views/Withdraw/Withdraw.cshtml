@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Withdraw";
+}
+
+<h2>Withdraw Money</h2>
+
+<form asp-action="Withdraw" method="post">
+    <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Withdraw</button>
+</form>
